@@ -24,7 +24,8 @@ router.get('/', (req, res) => {
 
 // Show demo records
 router.get('/jobs', (req, res) => {
-  res.json([
+  res.json({
+      "jobs":[
           {
               "id": "1",
               "title": "Senior React Developer",
@@ -109,7 +110,8 @@ router.get('/jobs', (req, res) => {
                   "contactPhone": "555-555-5555"
               }
           }
-      ]);
+      ]
+  });
 });
 
 // Email transporter setup
